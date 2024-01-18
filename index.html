@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration form</title>
+</head>
+<body>
+        <form action="#">
+            <h2>Форма регистрации</h3>
+            <div>
+                <label for="firstName">Имя</label>
+                <input type="text" name="firstName" id="firstName">
+                <small class="error hidden" id="firstNameError"></small>
+            </div>
+            <div>
+                <label for="lastName">Фамилия</label>
+                <input type="text" name="lastName" id="lastName">
+                <small class="error hidden" id="lastNameError"></small>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" >
+                <small class="error hidden" id="emailError"></small>
+            </div>
+            <div>
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password">
+                <small class="error hidden" id="passwordError"></small>
+            </div>
+            <div>
+                <label for="passwordConfirm">Подтвердите пароль</label>
+                <input type="password" name="passwordConfirm" id="passwordConfirm">
+                <small class="error hidden" id="passwordConfirmError"></small>
+            </div>
+            <div>
+                <label for="birthDate">Дата рождения</label>
+                <input type="date" name="birthDate" id="birthDate" required>
+                <small class="error hidden" id="birthDateError"></small>
+            </div>
+            <button type="submit" id="submitButton" disabled>Отправить</button>
+        </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
